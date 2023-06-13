@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Guess the number</title>
+</head>
+<body>
+    <div class="main-box">
+        <div class="border">
+            <h1>Adivina el numero!</h1>
+            <h2>Por favor introduce tu nombre de usuario.</h2><br>
+            <input type="text" id="name" placeholder="Introduce tu nombre"><br>
+            <button onclick="setName()">Iniciar juego</button>
+
+            <h2 id="welcome"></h2>
+
+            <input type="number" id="number" min="1" max="100" placeholder="Adivina un numero"><br>
+            <button onclick="checkNumber()" id="checkButton">Verificar</button><br>
+            <button onclick="retry()" id="retry" disabled>Reintentar</button><br>
+
+            <h3 id="message"></h3>
+            <h3 id="remaining"></h3>
+        </div>
+    </div>
+</body>
+</html>
